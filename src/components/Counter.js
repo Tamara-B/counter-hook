@@ -13,10 +13,10 @@ function Counter() {
         onChange={e => setCount(e.target.value)} 
       />
       <p>The counter is at : {count} </p>
-      <button onClick={() => setCount(count + 1)}>
+      <button onClick={() => setCount(Number(count) + 1)}>
         +1
       </button>
-      <button onClick={() => setCount(count - 1)}>
+      <button onClick={() => setCount(Number(count) - 1)}>
         -1
       </button>
     </div>
